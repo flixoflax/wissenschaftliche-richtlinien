@@ -90,19 +90,33 @@ export const AutosizeTextarea = React.forwardRef<
       }
     }, [value]);
 
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault(); // Prevent new line if Shift is not pressed
+        // Assuming the textarea is wrapped in a form, find the parent form and submit
+        const form = textAreaRef.current?.closest('form');
+        if (form && textAreaRef.current?.value != '') {
+          form.requestSubmit(); // Trigger form submission
+        }
+      }
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+      setTriggerAutoSize(e.target.value);
+      onChange?.(e);
+    };
+
     return (
       <textarea
         {...props}
         value={value}
         ref={textAreaRef}
         className={cn(
-          'flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+          'flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
           className
         )}
-        onChange={(e) => {
-          setTriggerAutoSize(e.target.value);
-          onChange?.(e);
-        }}
+        onChange={handleChange}
+        onKeyDown={handleKeyDown}
       />
     );
   }
