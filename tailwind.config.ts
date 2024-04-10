@@ -81,7 +81,7 @@ const config = {
       },
     },
   },
-  plugins: [tailwindAnimate, tailwindTypography],
+  plugins: [tailwindAnimate, tailwindTypography()],
 } satisfies Config;
 
 export default config;
