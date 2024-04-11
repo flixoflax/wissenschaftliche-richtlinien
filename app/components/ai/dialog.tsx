@@ -17,6 +17,16 @@ import { Label } from '../ui/label';
 import { ScrollArea } from '../ui/scroll-area';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
+function removeGeneralCitationPattern(inputString: string) {
+  // This regex matches patterns like 【anything here】
+  const pattern = /【.*?】/g;
+
+  // Replace found patterns with an empty string
+  const resultString = inputString.replace(pattern, '');
+
+  return resultString;
+}
+
 const AiDialog = () => {
   const [results, setResults] = useState('');
   const [disabled, setDisabled] = useState(false);
@@ -90,7 +100,7 @@ const AiDialog = () => {
                     },
                   }}
                 >
-                  {results}
+                  {removeGeneralCitationPattern(results)}
                 </ReactMarkdown>
               </div>
             </ScrollArea>
