@@ -28,11 +28,11 @@ export default function Richtlinien() {
 
       <p>
         <strong>Logisch strukturiert:</strong> Wichtig ist ein{' '}
-        <u>Roter Faden</u>, der in der Einleitung mit einer kurzen, knappen
+        <i>Roter Faden</i>, der in der Einleitung mit einer kurzen, knappen
         Vorgehensweise aufgenommen wird, sich durch die gesamte Arbeit zieht und
         seinen Abschluss in einer ebenfalls knappen und präzisen Formulierung in
         der Schlussbetrachtung findet. Dies dient der Lesefreundlichkeit und
-        auch dem Aufzeigen des <u>Roten Fadens</u>. Die Argumentation muss
+        auch dem Aufzeigen des <i>Roten Fadens</i>. Die Argumentation muss
         logisch aufeinander aufbauen, darf nicht diffus oder widersprüchlich
         sein.
       </p>
