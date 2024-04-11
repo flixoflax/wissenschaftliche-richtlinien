@@ -1,4 +1,5 @@
 import { Ruler, Scales, Scroll } from '@phosphor-icons/react';
+import ResourceSection from '~/components/resource-section';
 import { H2 } from '~/components/typography/h2';
 import { H3 } from '~/components/typography/h3';
 import { Lead } from '~/components/typography/lead';
@@ -140,6 +141,8 @@ const Praxistransferbericht = () => {
               dich!
             </P>
           </div>
+
+          <ResourceSection></ResourceSection>
         </Container>
       </section>
     </>
