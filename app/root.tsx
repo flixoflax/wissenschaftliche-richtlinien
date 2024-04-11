@@ -15,6 +15,7 @@ import {
 } from 'remix-themes';
 import stylesheet from '~/tailwind.css?url';
 
+import { Dialog } from './components/ui/dialog';
 import { themeSessionResolver } from './services/themeSession.server';
 
 export const links: LinksFunction = () => [
@@ -33,7 +34,9 @@ export default function AppWithProviders() {
   const data = useLoaderData<typeof loader>();
   return (
     <ThemeProvider specifiedTheme={data.theme} themeAction='/action/set-theme'>
-      <App />
+      <Dialog>
+        <App />
+      </Dialog>
     </ThemeProvider>
   );
 }

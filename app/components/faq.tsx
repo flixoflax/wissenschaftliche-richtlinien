@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from './ui/accordion';
+import { DialogTrigger } from './ui/dialog';
 
 export function FAQ() {
   return (
@@ -205,6 +206,15 @@ export function FAQ() {
             Erläuterungsfunktion der Fußnoten zu verwenden.
           </AccordionContent>
         </AccordionItem>
+
+        <DialogTrigger asChild>
+          <AccordionItem value='open-questions'>
+            <AccordionTrigger>
+              Deine Frage ist hier nicht aufgelistet? Stelle deine Fragen dem
+              HWR AI Assistenten!
+            </AccordionTrigger>
+          </AccordionItem>
+        </DialogTrigger>
       </Accordion>
     </Container>
   );
