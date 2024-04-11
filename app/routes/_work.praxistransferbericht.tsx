@@ -27,7 +27,7 @@ const Praxistransferbericht = () => {
           </Lead>
         </Container>
 
-        <Container className='py-28'>
+        <Container className='py-32'>
           <div className='grid grid-cols-3 gap-x-10'>
             <div>
               <div className='bg-primary/20 rounded-lg size-8 flex items-center justify-center'>
@@ -125,7 +125,7 @@ const Praxistransferbericht = () => {
           <H2 className='text-left max-w-screen-md w-full'>
             Du bist nicht allein!
           </H2>
-          <div className='text-left text-base max-w-screen-md'>
+          <div className='text-left text-base max-w-screen-md pb-20'>
             <P>
               Jeder Schritt bei der Erstellung deines PTBs ist eine wertvolle
               Erfahrung auf deinem akademischen und beruflichen Weg. Vergiss
@@ -142,7 +142,10 @@ const Praxistransferbericht = () => {
             </P>
           </div>
 
-          <ResourceSection></ResourceSection>
+          <ResourceSection
+            short='PTBs'
+            long='Praxistransferberichte'
+          ></ResourceSection>
         </Container>
       </section>
     </>

@@ -20,7 +20,20 @@ const Navbar = () => {
             ></img>
           </Link>
         </div>
-        <div className='flex flex-1 justify-center space-x-4'></div>
+        <div className='flex flex-1 justify-center space-x-3'>
+          <Button asChild variant={'link'} className='text-muted-foreground'>
+            <Link to='/praxistransferbericht'>Praxistransferbericht</Link>
+          </Button>
+          <Button asChild variant={'link'} className='text-muted-foreground'>
+            <Link to='/studienarbeit'>Studienarbeit</Link>
+          </Button>
+          <Button asChild variant={'link'} className='text-muted-foreground'>
+            <Link to='/bachelorarbeit'>Bachelorarbeit</Link>
+          </Button>
+          <Button asChild variant={'link'} className='text-muted-foreground'>
+            <Link to='/richtlinien'>Alle Richtlinien</Link>
+          </Button>
+        </div>
         <div className='flex flex-1 justify-end'>
           <DialogTrigger asChild>
             <Button variant={'outline'} className='rounded-r-none focus:z-10'>
