@@ -1,7 +1,7 @@
 import { Link } from '@remix-run/react';
 import { GuidelineContent } from '~/components/guideline-content';
 
-export default function RichtlinienAnforderungenBearbeitung() {
+export default function Richtlinien() {
   return (
     <GuidelineContent
       title='Anforderungen an die Bearbeitung'

@@ -32,8 +32,12 @@ const SIDEBARITEMS: SidebarItem[] = [
   },
   {
     title: 'Inhaltliche Maxime',
+    href: '/richtlinien/inhaltliche-maxime',
   },
-  { title: 'Formelle und strukturelle Maxime' },
+  {
+    title: 'Formelle und strukturelle Maxime',
+    href: '/richtlinien/formelle-und-strukturelle-maxime',
+  },
   { title: 'Aspekte zur Vorgehensweise' },
   { title: 'Quellenarten' },
   { heading: true, title: 'Formale Gestaltung' },

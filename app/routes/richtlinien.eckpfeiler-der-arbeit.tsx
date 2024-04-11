@@ -1,6 +1,6 @@
 import { GuidelineContent } from '~/components/guideline-content';
 
-export default function RichtlinienAnforderungenBearbeitung() {
+export default function Richtlinien() {
   return (
     <GuidelineContent
       title='Eckpfeiler der Arbeit'

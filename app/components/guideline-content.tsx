@@ -48,7 +48,9 @@ const GuidelineContent = (
       <div className='max-w-prose'>
         <H2 className={props.breadcrumbs ? 'pt-6' : ''}>{props.title}</H2>
       </div>
-      <div className='prose dark:prose-invert mt-4'>{props.children}</div>
+      <div className='prose dark:prose-invert mt-4 prose-a:text-primary'>
+        {props.children}
+      </div>
       <div className='grid grid-cols-2 gap-3 mt-20 max-w-prose'>
         {previousItem ? (
           <PageLink
