@@ -25,21 +25,21 @@ const HeroSection = () => {
         </Lead>
         <div className='grid grid-cols-1 md:grid-cols-2 pt-20 gap-5'>
           <PageLink
-            href='/richtlinien'
+            href='/praxistransferbericht'
             title='Praxistransferbericht'
             description='Praxis und Theorie verschmelzen'
             icon={<Exam></Exam>}
           ></PageLink>
 
           <PageLink
-            href='/richtlinien'
+            href='/studienarbeit'
             title='Studienarbeit'
             description='Erste Schritte in der Forschung'
             icon={<ListMagnifyingGlass></ListMagnifyingGlass>}
           ></PageLink>
 
           <PageLink
-            href='/richtlinien'
+            href='/bachelorarbeit'
             title='Bachelorarbeit'
             description='Die Königsdisziplin deines Bachelors'
             icon={<GraduationCap></GraduationCap>}

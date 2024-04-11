@@ -7,7 +7,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const assistant_id = 'asst_X3p18Uxfr06mPFsUKyHCaPYQ';
+const assistant_id = 'asst_aVWG0Qpgxs2RVNUmNWoLLK7s';
 
 export async function createNewThread(): Promise<string> {
   // Implement thread creation logic here
@@ -37,7 +37,9 @@ export async function loader({ request }: LoaderFunctionArgs) {
   // Adding a message to the thread
   await openai.beta.threads.messages.create(thread_id, {
     role: 'user',
-    content: message,
+    content:
+      'Bitte antworte in Markdown. Wenn es möglich ist füge ein Markdown Blockquote zu deiner Antwort hinzu. Dieses Zitat muss immer original aus der Richtlinien.pdf kommen. Frage:' +
+      message,
   });
 
   // Creating stream
