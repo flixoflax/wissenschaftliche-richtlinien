@@ -37,7 +37,9 @@ export default function Richtlinien() {
         </li>
         <li>
           Die Einhaltung aller{' '}
-          <Link to='/richtlinien/formale-gestaltung'>formalen Kriterien</Link>
+          <Link to='/richtlinien/formale-gestaltung-allgemeines'>
+            formalen Kriterien
+          </Link>
         </li>
       </ul>
       Ausgehend von einer, bereits in PTB I hohen Erwartungshaltung wird{' '}

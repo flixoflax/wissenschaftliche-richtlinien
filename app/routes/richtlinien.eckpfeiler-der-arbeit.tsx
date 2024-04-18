@@ -14,8 +14,8 @@ export default function Richtlinien() {
         Arbeit 1-2 Seiten vorsehen. Sie dient der Hinführung zum und zur
         Einstimmung auf das Thema. Neben der{' '}
         <strong>Hinleitung / Problemstellung</strong> sollte sie auch eine kurze
-        und präzise Formulierung der entsprechenden
-        <strong>Zielsetzung</strong> der Arbeit beinhalten, dazu über{' '}
+        und präzise Formulierung der entsprechenden <strong>Zielsetzung</strong>{' '}
+        der Arbeit beinhalten, dazu über{' '}
         <strong>Aufbau und Vorgehensweise</strong> unterrichten:
       </p>
       <p>
@@ -26,7 +26,7 @@ export default function Richtlinien() {
         Begriffe des Titels und ggfs. Untertitels zu beschränken.
       </p>
       <p>
-        Die, sich aus der Hinleitung fast zwangsläufig ergebende
+        Die, sich aus der Hinleitung fast zwangsläufig ergebende{' '}
         <strong>Zielformulierung</strong> der Arbeit sollte in einem deutlichen
         Zusammenhang mit dem Titel stehen bzw. diesen widerspiegeln. Soweit
         nötig, kann die dem Titel zugrunde liegende Aufgabenstellung an dieser

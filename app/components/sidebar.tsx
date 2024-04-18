@@ -38,13 +38,29 @@ const SIDEBARITEMS: SidebarItem[] = [
     title: 'Formelle und strukturelle Maxime',
     href: '/richtlinien/formelle-und-strukturelle-maxime',
   },
-  { title: 'Aspekte zur Vorgehensweise' },
-  { title: 'Quellenarten' },
-  { heading: true, title: 'Formale Gestaltung' },
-  { title: 'Äußere Gestaltung der Arbeiten' },
-  { title: 'Gliederung und Kennzeichnung einzelner Inhaltsteile' },
-  { title: 'Zitierweise' },
-  { title: 'Literaturverzeichnis' },
+  {
+    title: 'Aspekte zur Vorgehensweise',
+    href: '/richtlinien/aspekte-zur-vorgehensweise',
+  },
+  { title: 'Quellenarten', href: '/richtlinien/quellenarten' },
+  {
+    heading: true,
+    title: 'Formale Gestaltung',
+  },
+  {
+    title: 'Allgemeines',
+    href: '/richtlinien/allgemeines',
+  },
+  {
+    title: 'Äußere Gestaltung der Arbeiten',
+    href: '/richtlinien/aussere-gestaltung-der-arbeiten',
+  },
+  {
+    title: 'Gliederung und Kennzeichnung einzelner Inhaltsteile',
+    href: '/richtlinien/gliederung-und-kennzeichnung-einzelner-inhaltsteile',
+  },
+  { title: 'Zitierweise', href: '/richtlinien/zitierweise' },
+  { title: 'Literaturverzeichnis', href: '/richtlinien/literaturverzeichnis' },
   { title: 'Verwendung von Tabellen und Abbildungen' },
   {
     title:
@@ -99,11 +115,7 @@ const Sidebar = () => {
             return (
               <Link to={item.href} key={item.href}>
                 <Small
-                  className={
-                    item.heading
-                      ? 'leading-5 font-semibold [&:not(:first-child)]:pt-4 hover:opacity-60'
-                      : 'leading-5 text-muted-foreground hover:opacity-70'
-                  }
+                  className={'leading-5 text-muted-foreground hover:opacity-70'}
                 >
                   {item.title}
                 </Small>

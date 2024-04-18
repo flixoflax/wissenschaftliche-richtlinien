@@ -92,7 +92,7 @@ const AiDialog = () => {
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm, remarkMath]}
                   className={
-                    'prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 max-w-none'
+                    'prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 max-w-none prose-a:text-primary'
                   }
                   components={{
                     p({ children }) {
