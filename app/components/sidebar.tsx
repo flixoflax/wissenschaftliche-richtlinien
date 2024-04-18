@@ -73,6 +73,38 @@ const SIDEBARITEMS: SidebarItem[] = [
   { heading: true, title: 'Englischsprachige Arbeiten' },
 ];
 
+function cleanMarkdownLinks(
+  markdownText: string,
+  sidebarItems: SidebarItem[] = SIDEBARITEMS
+) {
+  // Extract href values from the sidebar items into a Set for quick lookup
+  const hrefSet = new Set(
+    sidebarItems.filter((item) => item.href).map((item) => item.href)
+  );
+
+  // Regex to find markdown links e.g., [link text](/path#anchor)
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+  // Replace function to check each link and decide if it stays or gets removed
+  const cleanedMarkdown = markdownText.replace(
+    linkRegex,
+    (match, text, url) => {
+      // Extract the URL base part before any '#' anchor
+      const urlBase = url.split('#')[0];
+
+      // Check if the URL base is in the sidebar items
+      if (hrefSet.has(urlBase)) {
+        return match; // keep the markdown link
+      }
+
+      // URL base not found, replace with just the link text
+      return text + ' (Broken Link:)';
+    }
+  );
+
+  return cleanedMarkdown;
+}
+
 function findNextItem(currentTitle: string): SidebarItem | null {
   const currentIndex = SIDEBARITEMS.findIndex(
     (item) => item.title === currentTitle
@@ -140,4 +172,4 @@ const Sidebar = () => {
   );
 };
 
-export { Sidebar, findNextItem, findPreviousItem };
+export { Sidebar, findNextItem, findPreviousItem, cleanMarkdownLinks };

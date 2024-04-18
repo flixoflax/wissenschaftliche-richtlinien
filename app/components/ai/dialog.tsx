@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 
+import { cleanMarkdownLinks } from '../sidebar';
 import { AutosizeTextarea } from '../ui/autosize-textarea';
 import { Button } from '../ui/button';
 import {
@@ -100,7 +101,7 @@ const AiDialog = () => {
                     },
                   }}
                 >
-                  {removeGeneralCitationPattern(results)}
+                  {cleanMarkdownLinks(removeGeneralCitationPattern(results))}
                 </ReactMarkdown>
               </div>
             </ScrollArea>

@@ -7,7 +7,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const assistant_id = 'asst_aVWG0Qpgxs2RVNUmNWoLLK7s';
+const assistant_id = process.env.OPENAI_ASSISTANT_ID!;
 
 export async function createNewThread(): Promise<string> {
   // Implement thread creation logic here
@@ -38,7 +38,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
   await openai.beta.threads.messages.create(thread_id, {
     role: 'user',
     content:
-      'Bitte antworte in Markdown. Beantworte die Frage kurz und prägnant. Beschwichtige den Studenten und verwende Emojis. Wenn es möglich ist füge ein Markdown Blockquote zu deiner Antwort hinzu. Dieses Zitat muss immer original aus der Richtlinien kommen. Wenn du ein Zitat hinzufügst, füge einen Link nach folgendem Schema hinzu: http://localhost:5173/richtlinien/unterkapitel#subkapitel; Der Name des Unterkapitel und wenn vorhanden Subkapitels müssen im Wortlaut der Richtlinien sein. Ein Unterkapitel ist immer mit der Überschrift X.Y gekennzeichnet. Ein Subkapitel ist immer mit der Überschrift X.Y.Z gekennzeichnet. Frage: ' +
+      'Bitte antworte in Markdown. Beantworte die Frage kurz und prägnant. Beschwichtige den Studenten und verwende Emojis. Wenn es möglich ist füge ein Markdown Blockquote zu deiner Antwort hinzu. Dieses Zitat muss immer original aus der Richtlinien kommen. Wenn du ein Zitat hinzufügst, füge einen Link nach folgendem Schema hinzu: http://localhost:5173/richtlinien/unterkapitel#subkapitel; Der Name des Unterkapitel und wenn vorhanden Subkapitels müssen im Wortlaut der Richtlinien sein. Ein Unterkapitel ist immer mit der Überschrift X.Y gekennzeichnet. Ein Subkapitel ist immer mit der Überschrift X.Y.Z gekennzeichnet. Jeder Link muss in Kebab-Case sein und darf keine Nummerierung enthalten. Frage: ' +
       message,
   });
 
