@@ -70,9 +70,18 @@ const SIDEBARITEMS: SidebarItem[] = [
       'Verwendung von (nicht-wissenschaftlichen) Internet-/ Intranetquellen',
     href: '/richtlinien/verwendung-von-nicht-wissenschaftlichen-internet-intranetquellen',
   },
-  { title: 'Gestaltung mathematischer und statistischer Teile der Arbeit' },
-  { title: 'Gestaltung des Anhangs' },
-  { title: 'Ehrenwörtliche Erklärung' },
+  {
+    title: 'Gestaltung mathematischer und statistischer Teile der Arbeit',
+    href: '/richtlinien/gestaltung-mathematischer-und-statistischer-teile-der-arbeit',
+  },
+  {
+    title: 'Gestaltung des Anhangs',
+    href: '/richtlinien/gestaltung-des-anhangs',
+  },
+  {
+    title: 'Ehrenwörtliche Erklärung',
+    href: '/richtlinien/ehrenwortliche-erklarung',
+  },
   { heading: true, title: 'Bewertungskriterien' },
   { heading: true, title: 'Englischsprachige Arbeiten' },
 ];

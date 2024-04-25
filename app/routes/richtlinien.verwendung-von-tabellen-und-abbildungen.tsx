@@ -94,7 +94,7 @@ export default function Richtlinien() {
         nicht erhoben worden ist
       </li>
       <li>
-        - ein <strong>hochgestelltes kleines p</strong> (<sup>p</sup>), wenn die
+        ein <strong>hochgestelltes kleines p</strong> (<sup>p</sup>), wenn die
         Zahl geschätzt wurde
       </li>
       <p>
