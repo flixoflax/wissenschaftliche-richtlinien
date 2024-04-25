@@ -61,10 +61,14 @@ const SIDEBARITEMS: SidebarItem[] = [
   },
   { title: 'Zitierweise', href: '/richtlinien/zitierweise' },
   { title: 'Literaturverzeichnis', href: '/richtlinien/literaturverzeichnis' },
-  { title: 'Verwendung von Tabellen und Abbildungen' },
+  {
+    title: 'Verwendung von Tabellen und Abbildungen',
+    href: '/richtlinien/verwendung-von-tabellen-und-abbildungen',
+  },
   {
     title:
       'Verwendung von (nicht-wissenschaftlichen) Internet-/ Intranetquellen',
+    href: '/richtlinien/verwendung-von-nicht-wissenschaftlichen-internet-intranetquellen',
   },
   { title: 'Gestaltung mathematischer und statistischer Teile der Arbeit' },
   { title: 'Gestaltung des Anhangs' },
