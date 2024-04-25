@@ -176,7 +176,9 @@ export default function Richtlinien() {
         Die Eigenkapitalrendite nach Steuern ist in den letzten Jahren auf ca.
         5,5 % gefallen.<sup>5</sup>
       </blockquote>
-      <h2>Zitate aus Gesetzen und ähnlichen Vorschriften</h2>
+      <h2 id='zitate-aus-gesetzen-und-ahnlichen-vorschriften'>
+        Zitate aus Gesetzen und ähnlichen Vorschriften
+      </h2>
       <p>
         Gesetzliche und ähnliche Vorschriften sind regelmäßig nur abgekürzt zu
         zitieren. Dabei sind die amtlichen Abkürzungen, im Zweifelsfall auch die
