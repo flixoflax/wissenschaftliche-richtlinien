@@ -82,8 +82,12 @@ const SIDEBARITEMS: SidebarItem[] = [
     title: 'Ehrenwörtliche Erklärung',
     href: '/richtlinien/ehrenwortliche-erklarung',
   },
-  { heading: true, title: 'Bewertungskriterien' },
-  { heading: true, title: 'Englischsprachige Arbeiten' },
+  { heading: true, title: 'Sonstiges' },
+  { title: 'Bewertungskriterien', href: '/richtlinien/bewertungskriterien' },
+  {
+    title: 'Englischsprachige Arbeiten',
+    href: '/richtlinien/englischsprachige-arbeiten',
+  },
 ];
 
 function cleanMarkdownLinks(

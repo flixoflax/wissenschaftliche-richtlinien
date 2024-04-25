@@ -22,14 +22,14 @@ const PageLink = ({
         <div
           className={
             arrowLeft
-              ? 'flex items-center transition-all duration-600 ease-in-out'
-              : 'flex items-center justify-between transition-all duration-600 ease-in-out'
+              ? 'flex items-center transition-all duration-600 ease-in-out h-full'
+              : 'flex items-center justify-between transition-all duration-600 ease-in-out h-full'
           }
         >
           {arrowLeft ? (
             <ArrowLeft className='ml-3 mr-6 opacity-0 transition-opacity duration-600 ease-in group-hover:opacity-100 size-7 text-primary flex-shrink-0'></ArrowLeft>
           ) : null}
-          <div>
+          <div className='h-full'>
             {icon ? (
               <IconContext.Provider
                 value={{ color: 'hsl(var(--primary))', size: '20px' }}
